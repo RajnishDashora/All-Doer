@@ -1,7 +1,7 @@
 var should = require('chai').should();
 var alldoer= require('../lib/allDoer');
-describe('test',function(){
+describe('linearStructure',function(){
   it('returns Hello',function(){
-    alldoer.test().should.equal('Hello All Doer');
+    alldoer.linearStructure().should.equal('linearStructure');
   });
 });
