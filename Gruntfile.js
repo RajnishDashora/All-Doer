@@ -11,7 +11,7 @@ module.exports = function (grunt) {
     watch: {
       js: {
         files: ['lib/{,*/}*.js'],
-        tasks: ['jshint:all', 'copy:dev']
+        tasks: ['jshint:all', 'copy:dev','shell']
       }
 
     },
@@ -58,7 +58,7 @@ module.exports = function (grunt) {
         stderr: false
       },
       target: {
-        command: 'node_modules/http-server/bin/http-server'
+        command: 'node_modules/mocha/bin/mocha --reporter spec'
       }
     }
 
@@ -68,7 +68,7 @@ module.exports = function (grunt) {
 
   // Default task(s).
 
-  grunt.registerTask('server', [
+  grunt.registerTask('test', [
     'shell'
   ]);
   grunt.registerTask('cleanlib',[
@@ -79,6 +79,7 @@ module.exports = function (grunt) {
     'clean:all',
     'jshint:all',
     'copy:dev',
+    'shell',
     'watch'
   ]);
   grunt.registerTask('build', [
