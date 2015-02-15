@@ -9,6 +9,7 @@ var firstPath = outputDirPath + '/first'
 var secondPath = outputDirPath + '/second'
 var thirdPath = outputDirPath + '/third'
 var structureJSON = {"output": ['first', 'second', 'third']};
+var singleDirJSON= {"output": []};
 describe('linear one level structures', function () {
   beforeEach(function () {
     rimraf.sync(outputDirPath)
@@ -31,7 +32,7 @@ describe('linear one level structures', function () {
     result.should.equal(true);
   });
   it('creates directory of files', function () {
-    alldoer.linearStructure(rootDirPath, {"output":[]});
+    alldoer.linearStructure(rootDirPath,singleDirJSON);
     result = fs.existsSync(outputDirPath)
     result.should.equal(true);
   });
