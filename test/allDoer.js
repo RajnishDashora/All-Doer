@@ -3,7 +3,7 @@ var alldoer = require('../lib/allDoer');
 var rimraf = require('rimraf')
 var fs = require('fs');
 //variables used,
-var rootDirPath = '/Users/rajnishdashora/work/nodejs/All-doer/lib/fixtures/';
+var rootDirPath = 'lib/fixtures/';
 var outputDirPath = rootDirPath + '/output';
 var firstPath = outputDirPath + '/first'
 var secondPath = outputDirPath + '/second'
