@@ -31,7 +31,7 @@ describe('linear one level structures', function () {
     && fs.existsSync(thirdPath);
     result.should.equal(true);
   });
-  it('creates directory of files', function () {
+  it('creates a directory', function () {
     alldoer.linearStructure(rootDirPath,singleDirJSON);
     result = fs.existsSync(outputDirPath)
     result.should.equal(true);
