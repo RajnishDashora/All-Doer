@@ -2,7 +2,7 @@
 
 All-Doer means the creator of all. This node module is to create directory structure along with files.
 ###Installation
-npm install git@github.com:RajnishDashora/All-Doer.git
+npm install git://github.com/RajnishDashora/All-Doer.git
 ### Usage
 
 var allDoer = require('allDoer');
